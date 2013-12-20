@@ -1,0 +1,5 @@
+{
+  "Run": "promise-it-wont-hurt select {{current_file}} && promise-it-wont-hurt run {{current_file}}",
+  "Verify": "promise-it-wont-hurt select {{current_file}} && promise-it-wont-hurt verify {{current_file}},
+  "default": "Run"
+}
