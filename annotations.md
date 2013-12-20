@@ -68,7 +68,7 @@ Manually reject that promise using setTimeout with a delay of 300ms and pass it 
 #To Reject or not to Reject
 ###What happens if we reject AND resolve a promise?
 
-The Promises/A+ spec states that a promise, once fullfilled or rejected, may NOT change states for the rest of its lifetime.  This is an important feature of promises and it is also one of the things that differentiates it from an EventEmitter (and other forms of repeatable callbacks);
+The [Promises/A+ spec](http://promises-aplus.github.io/promises-spec/) states that a promise, once fullfilled or rejected, may NOT change states for the rest of its lifetime.  This is an important feature of promises and it is also one of the things that differentiates it from an EventEmitter (and other forms of repeatable callbacks);
 
 Callback-style code usually requires a callback function to be invoked somewhere in the body of the function that it was passed to.  Many, if not most times, that function is intended to be called only once.  However, through errors in logic, problems with syntax, or other simple mistakes it is possible to call your callback multiple times and create vexxing states in your app or insidious bugs.
 
