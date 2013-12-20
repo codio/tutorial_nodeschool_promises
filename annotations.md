@@ -1,5 +1,5 @@
 @annotation:tour fulfill_a_promise
-#Fulfill a Promise
+#1. Fulfill a Promise
 ###What is a promise?
 A promise is an object that defines a method called "then". The promise object represents a value (or values) that may
 be available some time in the future.  
@@ -43,7 +43,7 @@ The defer that is created is not exactly the promise and in order to return the 
 
 
 @annotation:tour reject_a_promise
-#Rejecting a Promise
+#2. Rejecting a Promise
 When a promise is rejected, this is typically (though not always) used to indicate that a value was not successfully obtained by the promise.  Once a promise has been rejected, it can never be resolved (nor rejected again).
 
 Promises implement internal state machines that have strict rules against ever leaving either the resolved or rejected states.
@@ -65,7 +65,7 @@ Manually reject that promise using setTimeout with a delay of 300ms and pass it 
 - [Q API Reference](https://github.com/kriskowal/q/wiki/API-Reference)
 
 @annotation:tour to_reject_or_not_to_reject
-#To Reject or not to Reject
+#3. To Reject or not to Reject
 ###What happens if we reject AND resolve a promise?
 
 The [Promises/A+ spec](http://promises-aplus.github.io/promises-spec/) states that a promise, once fullfilled or rejected, may NOT change states for the rest of its lifetime.  This is an important feature of promises and it is also one of the things that differentiates it from an EventEmitter (and other forms of repeatable callbacks);
@@ -101,7 +101,7 @@ If successful, your script should only log "I FIRED" and should NOT log "I DID N
 
 
 @annotation:tour always_async
-#Always Async
+#4. Always Async
 ###Are promises always resolved asynchronously?
 The Promises/A+ spec declares that promises MUST fire their resolution/rejection function on the same turn of the event loop that they are created on.  This is very important because it eliminates the possibility of execution order varying and resulting in indeterminate outcomes.
 
@@ -123,7 +123,7 @@ Thus, you should see "FIRST", "SECOND"
 
 
 @annotation:tour values_and_promises
-#Values and Promises
+#5. Values and Promises
 ###Do I HAVE to return promises?
 NO!  Fulfillment handlers may return promises OR values.  Your Promises/A+ library will do the correct thing and wrap your
 return value in a promise if need be.  This is awesome because it allows you to intermix values with promises in a chain.
@@ -160,7 +160,7 @@ If your program runs successfully, it should print out "DR. MANHATTAN" which is 
 
 
 @annotation:tour throw_an_error
-#Throw an Error
+#6. Throw an Error
 ###What happens when an error is thrown?
 One of the tremendous strengths of promises is that they handle errors in a manner similar to synchronous code.  Unlike in traditional callback-based code, you do not need to strictly handle all your errors at every step.  
 
@@ -192,7 +192,7 @@ Let's build exactly the system discussed above. Some invalid JSON will be availa
 
 
 @annotation:tour using_qfcall
-#Using qfcall
+#7. Using qfcall
 ###Using Q's fcall to simplify our code
 Wrapping a value or synchronous function call in a promise is a fairly easy pattern to capture in a generic way.
 
@@ -206,7 +206,7 @@ Use fcall to replace the entire parsePromised function from the previous lesson.
 
 
 @annotation:tour an_important_rule
-#An Important Rule
+#8. An Important Rule
 ###There's always a catch....(lol pun)
 Promises are designed to emulate synchronous control flows. If any of them throw an exception, the exception will bubble up 
 through the stack until it is caught by a catch block or hits the global context where it will be thrown.
@@ -267,7 +267,7 @@ Try swapping your rejection handler from console.log to throwMyGod. Your program
 
 
 @annotation:tour multiple_promises
-#Multiple Promises
+#9. Multiple Promises
 ###Can you do what async does?
 When doing asynchronous programming you will often want to perform multiple operations in parallel. In some cases you may wish to delay further processing until a list of async operations have completed.
 
@@ -315,7 +315,7 @@ Q.all, .spread, etc are just some of the many promise utility functions that man
 
 
 @annotation:tour fetch_json
-#Fetch JSON
+#10. Fetch JSON
 ###Let's do something, you know, from "real life"
 
 **Let's fetch JSON over HTTP... YAY!**
@@ -347,7 +347,7 @@ This challenge is a bit tricky but the implementation is relatively straightforw
 
 
 @annotation:tour do_some_work
-#Do Some Work
+#11. Do Some Work
 ###Let's do several operations against "remote" machines
 Sending and fetching data from computers/processes other than your application is an increasingly common task in the world of node.js and the browser.  Many times, you will need to gather data from several sources, perform operations on it, and send some data back out.
 
@@ -373,7 +373,7 @@ Don't forget that [q-io's read method](https://github.com/kriskowal/q-io/#readpa
 
 
 @annotation:tour more_functional
-#More Functional
+#12. More Functional
 ###Let's tweak/refactor the previous lesson to be more declarative!
 Functional programming carries with it some stigmas that can scare many people away. This is unfortunate because you can in fact write clear, elegant code using a small subset of [functional programming](http://en.wikipedia.org/wiki/Functional_programming).  
 
