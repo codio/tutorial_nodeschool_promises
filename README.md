@@ -5,7 +5,7 @@
 *All content is written and produced by [http://nodeschool.io](http://nodeschool.io). Please see the credits at the bottom of this page and if you have learnt a lot from these tutorials, please make a donation (also at the bottom).*
 
 #Video
-If you prefer a video rather than reading the instructions below, there is a video that runs through the Codio + Nodeschool.io system (yes, it's a tutorial on how to use the tutorial) : TODO LINK
+If you prefer a video rather than reading the instructions below, there is a video that runs through the Codio + Nodeschool.io system (yes, it's a tutorial on how to use the tutorial) : [https://vimeo.com/86100550](https://vimeo.com/86100550)
 
 #Installation
 1. Create an account with http://codio.com (don't be frightened, it's free for all public projects).
@@ -16,8 +16,8 @@ If you prefer a video rather than reading the instructions below, there is a vid
 
 You'll now need to install the Nodeschool tutorial (each one is an npm package) onto your project's Box. There are two ways to do this ...
 
-- Hands Dirty: open up a Terminal with from the 'Tools->Terminal' menu, then enter `npm install -g learnyounode`.
-- Lazy Way: click on the "Install <tut-name>" menu item. Once installed, you can close that tab.
+- Hands Dirty: open up a Terminal with from the 'Tools->Terminal' menu, then enter `npm install -g promise-it-wont-hurt@latest`.
+- Lazy Way: click on the "Install Promise it Won't Hurt" menu item. Once installed, you can close that tab.
 
 
 #2 Writing your code
@@ -42,10 +42,10 @@ Each lesson requires different arguments so when you switch lessons, you should 
 ![instructions](stuff/menu.png)
 
 ###2. Shell out to the Terminal
-You can open a Terminal window at any time by selecting the 'Tools->Terminal' menu item. Your terminal defaults to the `~/workspace` folder, which equates to the root of your Codio code project. If you are writing your code in the lesson folder (for example `02_baby_steps`) then you will need to `cd` into that folder, so something like this
+You can open a Terminal window at any time by selecting the 'Tools->Terminal' menu item. Your terminal defaults to the `~/workspace` folder, which equates to the root of your Codio code project. If you are writing your code in the lesson folder (for example `02_reject_a_promise`) then you will need to `cd` into that folder, so something like this
 
-    cd 02_baby_steps
-    node baby_steps.js 1 2 3
+    cd 02_reject_a_promise
+    node reject_a_promise.js 1 2 3
 
 #Running your Code via the Tutorial system
 When you've got your code to the point where you think it is ready for the Tutorial system to check it, you should select the 'Run Lesson' item from the 'Run' menu. The tutorial system will automatically supply any required arguments to your project as required by the current lesson. You can see the 'Run Lesson' item in the above menu screenshot.
