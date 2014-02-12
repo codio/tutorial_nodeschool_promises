@@ -7,7 +7,7 @@ if [[ "$#" -ne 3 ]]; then
 fi 
  
 # Translate lesson name into correct name for Workshopper projects 
-if [ $2 == "fulfill_a_promie" ]; then 
+if [ $2 == "fulfill_a_promise" ]; then 
     STR="FULFIL A PROMISE" 
 elif [ $2 == "reject_a_promise" ]; then 
     STR="REJECT A PROMISE" 
@@ -42,7 +42,7 @@ promise-it-wont-hurt select $STR > /dev/null
  
 # Run or Verify? 
 if [ $1 == "run" ]; then 
-    promise-it-wont-hurtt run $3/$2.js 
+    promise-it-wont-hurt run $3/$2.js 
 elif [ $1 == "verify" ]; then 
     promise-it-wont-hurt verify $3/$2.js 
 else  
