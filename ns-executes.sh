@@ -8,7 +8,7 @@ fi
  
 # Translate lesson name into correct name for Workshopper projects 
 if [ $2 == "fulfill_a_promise" ]; then 
-    STR="FULFIL A PROMISE" 
+    STR="FULFILL A PROMISE" 
 elif [ $2 == "reject_a_promise" ]; then 
     STR="REJECT A PROMISE" 
 elif [ $2 == "to_reject_or_not_to_reject" ]; then 
