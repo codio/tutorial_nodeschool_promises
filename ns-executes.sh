@@ -8,29 +8,29 @@ fi
  
 # Translate lesson name into correct name for Workshopper projects 
 if [ $2 == "fulfill_a_promise" ]; then 
-    STR=" fulfill a promise" 
+    STR="fulfill_a_promise" 
 elif [ $2 == "reject_a_promise" ]; then 
-    STR=" reject a promise" 
+    STR="reject_a_promise" 
 elif [ $2 == "to_reject_or_not_to_reject" ]; then 
-    STR=" to reject or not to reject" 
+    STR="to_reject_or_not_to_reject" 
 elif [ $2 == "always_async" ]; then 
-    STR=" always async" 
+    STR="always_async" 
 elif [ $2 == "values_and_promises" ]; then 
-    STR=" values and promises" 
+    STR="values_and_promises" 
 elif [ $2 == "throw_an_error" ]; then 
-    STR=" throw an error" 
+    STR="throw_an_error" 
 elif [ $2 == "using_qfcall" ]; then 
-    STR=" using qfcall" 
+    STR="using_qfcall" 
 elif [ $2 == "an_important_rule" ]; then 
-    STR=" an important rule" 
+    STR="an_important_rule" 
 elif [ $2 == "multiple_promises" ]; then 
-    STR=" multiple promises" 
+    STR="multiple_promises" 
 elif [ $2 == "fetch_json" ]; then 
-    STR=" fetch json" 
+    STR="fetch_json" 
 elif [ $2 == "do_some_work" ]; then 
-    STR=" do some work" 
+    STR="do_some_work" 
 elif [ $2 == "more_functional" ]; then 
-    STR=" more functional" 
+    STR="more_functional" 
 else 
     echo UNKNOWN: Make sure you have your code file selected before running/verifying 
     exit 0 
