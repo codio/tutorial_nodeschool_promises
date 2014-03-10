@@ -84,5 +84,3 @@ Lars-Magnus Skog ([github/ralphtheninja](https://github.com/ralphtheninja), [twi
 Tim Inman ([github/thehack](https://github.com/thehack), [twitter@timinman](http://twitter.com/timinman)), 
 Dan Flettre ([github/Flet](https://github.com/Flet), [twitter@flettre](http://twitter.com/flettre)) 
 
-##Donations
-If you feel you have benefitted from this or the other tutorials, how about [donating to Rodd Vagg using gittip](https://www.gittip.com/rvagg/)
